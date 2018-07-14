@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Le Brume Salée - The Best Restaurant in London</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Web_style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+ function changeFunc() {
+  var selectBox = document.getElementById("selectBox");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  if(selectedValue=='0'){
+    window.location.href = "Location.html";
+  }
+  else if (selectedValue=='1') {
+    window.location.href = "Location_french.html"
+  }
+ }
+</script>
+</head>
+
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link ml-5" href="Main_page.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-2" href="Menu.html">Menu </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-1" href="Experience.html">Experience </a>
+      </li>
+      <a class="navbar-brand ml-3" href="Main_page.html">
+        <img src="logo.png" alt="Logo" style="width:120px;">
+      </a>
+      <li class="nav-item">
+        <a class="nav-link" href="Our_team.html">Our Team</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Location.html">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Reservation.html">Reservation </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="pic_display">
+  <img src="location.png" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <select class="form-control" id="selectBox" onchange="changeFunc();">
+        <option value="0">English</option>
+        <option value="1">French</option>
+      </select>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+
+<center><h1>Le Brume Salée</h1></center>
+<br>
+<div class="container" id="restaurant_details">
+<p style="margin-left:30%"><i class="material-icons">class</i><b>Address:</b> 63 Piccadilly, Mayfair,London, W1J 0AJ, UK</center></p>
+<p style="margin-left:30%"><i class="material-icons">phone</i><b>Contact number: </b> +44 20 7123 1234</center></p>
+<p style="margin-left:30%"><i class="material-icons">schedule</i><b>Operating hours: </b>10am-5pm on Monday-Saturday;11am-3pm on Sunday</center></p>
+</div>
+<br>
+<br>
+<center><div id="map" style="width:800px;height:400px;background:yellow"></div></center>
+<br>
+<br>
+<div id="location_text">
+<p>Located in London’s downtown Mayfair district, Le Brume Salée is surrounded by premier
+shopping options, and also numerous cultural and historical landmarks. Surrounded by some
+of the United Kingdom’s most recognizable historic buildings such as the Buckingham Palace,
+as well as some of London’s most beautiful parks, the area around Le Brume Salée is perfect
+for any visitor to London. As Le Brume Salée is within walking distance to London’s theatre
+district—arguably the finest in the world, and also some museums and historic churches, visitors
+of all ages can enjoy the Mayfair district. Le Brume Salée is perfectly situated to allow for its
+patrons to enjoy London before indulging in the best French food North of the English Channel.
+</div>
+<br>
+<br>
+
+<div id="footer">
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5><i class="material-icons">favorite</i> Le Brume Salée </h5>
+                  <div class="row">
+                      <div class="col-15">
+                          <ul class="list-unstyled">
+                              <li><b>Location: </b>63 Piccadilly, Mayfair, London, W1J, 0AJ, UK</li>
+                              <li><b>Opearting hours: </b>10am-5pm Monday-Saturday;11am-3pm Sunday</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <ul class="nav">
+                    <li class="nav-item"><a href="https://www.facebook.com/Le-Brume-Sal%C3%A9e-389374448243386/?ref=br_rs" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/lebrumesalee/" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                  </ul>
+                  <br>
+              </div>
+              <div class="col-md-2">
+                  <h5 class="text-md-right">Contact Us</h5>
+                  <hr>
+              </div>
+              <div class="col-md-4">
+                <form action="/mesg_main_page" method="POST" id="mesg_form">
+                   <fieldset class="form-group">
+                      <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                         placeholder="Enter email">
+                   </fieldset>
+                   <fieldset class="form-group">
+                      <textarea name="message" class="form-control" id="exampleMessage"
+                         placeholder="Message"></textarea>
+                   </fieldset>
+                   <fieldset class="form-group text-xs-right">
+                      <button type="submit" value="Submit" class="btn btn-secondary-outline btn-
+                         lg" onclick="javascript:alert('Message sent successfully')">Send</button>
+                   </fieldset>
+                </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+</body>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(51.507999,-0.141015);
+var mapCanvas = document.getElementById("map");
+var mapOptions = {center: myCenter, zoom: 14.5};
+var map = new google.maps.Map(mapCanvas, mapOptions);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoWc92Q00y5JHRG1nnyLK0dx5pEF5mJVw&callback=myMap"></script>
+</html>

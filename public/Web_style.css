@@ -1,0 +1,382 @@
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float:none;
+}
+
+li.nav-item {
+  letter-spacing: 2.5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+ul.navbar-nav a {
+  color: #fff !important;
+}
+
+ul.navbar-nav a:hover {
+  color: #DDA402 !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 34em) {
+    body {
+      margin-bottom: 500px;
+    }
+    .footer {
+      height: 500px;
+    }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #aaa;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+div.form-group{
+  position: absolute;
+  margin-top: 10px;
+  right: 20px;
+  width: 100px;
+  height: 30px;
+}
+
+img.img-fluid {
+    height: auto;
+    width: 100%; /* ie8 */
+    object-fit:cover;
+}
+
+img.chef_img{
+  width: 25%;
+}
+
+img.experience_img{
+  width: 60%;
+}
+
+#map {
+  height: 100%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    position:relative;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 17px;
+    position:relative;
+    left:30%;
+    color:#800000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #dda402;
+    color:#ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:3%;
+    position:relative;
+    height: 750px;
+    overflow: scroll;
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 3px;
+}
+
+.column img{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.row{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row h2{
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.table td{
+  font-size: 18px;
+  text-align: left;
+}
+
+.column #michelin{
+  margin-left: 40%;
+  margin-top: 0%;
+}
+
+#video{
+  display: block;
+  position: relative;
+}
+
+.navbar-nav > .active > a {
+  background-color: #DDA402;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.form-group{
+  margin-left: 20%;
+}
+
+.reservation_form{
+  float: left;
+}
+
+input[type=text], select {
+    width: 50%;
+    padding: 6px 17px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 50%;
+    padding: 6px 17px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=time], select {
+    width: 50%;
+    padding: 6px 17px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    margin-left: 23%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.reser_form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left:25%;
+    margin-right: 25%;
+}
+
+option{
+  margin-left: 5px;
+}
+
+#form_content{
+  margin-left: 5%;
+}
+
+.reser_form label{
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+
+.reser_form select{
+  width: 50%;
+  padding: 6px 17px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 550px;
+    border-radius: 5px;
+    position:static;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+#exp_card_left{
+  margin-left: 15%;
+  float: left;
+}
+
+#exp_card_right{
+  margin-left:53%;
+}
+
+#chef_card_center{
+  margin-left: 33%;
+}
+
+#chef_card_left{
+  margin-left: 15%;
+  float: left;
+}
+
+#chef_card_right{
+  margin-left:53%;
+}
+
+
+#main_chef_intro_text{
+  text-align: justify;
+  margin-left: 20%;
+  width: 60%;
+}
+
+#guest_chef_intro_text{
+  text-align: justify;
+  margin-left: 20%;
+  width: 60%;
+}
+
+#location_text{
+  text-align: justify;
+  margin-left: 20%;
+  width: 60%;
+}
+
+.card_text{
+  text-align:justify;
+}
+
+#michelin_intro_text{
+  text-align: justify;
+}
+
+#michelin_intro{
+  width: 80%;
+  margin-left: 7%;
+}
+
+#disclaimer{
+  margin-left: 10%;
+}

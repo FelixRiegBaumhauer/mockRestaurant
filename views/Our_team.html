@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Le Brume Salée - The Best Restaurant in London</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Web_style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+ function changeFunc() {
+  var selectBox = document.getElementById("selectBox");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  if(selectedValue=='0'){
+    window.location.href = "Our_team.html";
+  }
+  else if (selectedValue=='1') {
+    window.location.href = "Our_team_french.html"
+  }
+ }
+</script>
+</head>
+
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <ul class="navbar-nav">
+      <li id="menu" class="nav-item">
+        <a class="nav-link ml-5" href="Main_page.html">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-2" href="Menu.html">Menu </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-1" href="Experience.html">Experience </a>
+      </li>
+      <a class="navbar-brand ml-3" href="Main_page.html">
+        <img src="logo.png" alt="Logo" style="width:120px;">
+      </a>
+      <li class="nav-item active">
+        <a class="nav-link" href="Our_team.html">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Location.html">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Reservation.html">Reservation </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<div id="pic_display">
+  <img src="our_team.jpg" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <select class="form-control" id="selectBox" onchange="changeFunc();">
+        <option value="0">English</option>
+        <option value="1">French</option>
+      </select>
+    </div>
+  </form>
+</div>
+<br>
+
+<br>
+<div class="container" id="main_chef_intro">
+<p id="main_chef_intro_text">At Le Brume Salée,
+the entirety of the team,
+from our michelin star winning chefs,
+to our busboys,
+is entirely dedicated to fulfilling
+all requests an desires of our patrons.
+Our focus attention to detail
+and our desire to leave dinners
+with an unforgettable experience
+is central to everything we do. </p>
+</div>
+<br>
+<center><h1>Main Chef</h1></center>
+<div class="card" id="chef_card_center">
+  <img src="guy.jpg" alt="guy" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Guy Savoy - three michelin stars</b></h4><center>
+    <p class="card_text">Guy Savoy is a world renowned Chef who through his numerous Parisian Restaurants has brought high quality French cooking to the World. His three Michelin Stars speak volumes about his skills as a chef. With his focus on only using the very best locally sourced ingredients, he is able to provide an unmatched culinary experience. Through his work at Le Brume Salée, he is seeking to bringing French cuisine to new environments. In these new surroundings, Chef Savoy, however continues to ground his work in traditional French fare, with an emphasis on Bourgogne specialties.
+</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<center><h1>Guest Chef</h1></center>
+
+<div class="container" id=“guest_chef_intro”>
+<p id="guest_chef_intro_text">
+As one of London’s premier culinary establishments, Le Brume Salée employs an innovative rotating cast
+of acclaimed guest chefs from around the world. These chefs bring their own expertise and culinary experience
+to our kitchen, where they create their own specialty menus. This concept allows patrons to both experience
+Le Brume Salée’s traditional French cuisine, while also being exposed to diverse international fare.
+</p>
+</div>
+<br>
+<br>
+<div class="card" id="chef_card_left">
+  <img src="noba.jpg" alt="noba" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Noba Matsihusa - Japanese/Peruvian fusion</b></h4><center>
+    <p class="card_text">Spending his life dedicated to the art to Japanese-Peruvian fusion, in this capacity he has set up numerous restaurants around the world. As a guest chef at Le Brume Salée, he will implement a variety of Japanese-Peruvian fusion. His specialities will seek to expose patrons to the unique flavors found on both sides of the Pacific.
+    </p>
+  </div>
+</div>
+
+<div class="card" id="chef_card_right">
+  <img src="erique.jpg" alt="erique" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Enrique Olvera - Mexican</b></h4><center>
+    <p class="card_text">As arguably the most recognized and heralded current Mexican chef, Enrique Olvera will take on the duties as guest chef at Le Brume Salée,  where he plans on bringing concepts from his current restaurants. Specifically, he seeks to incorporate his love for locally sourced ingredients into his new kitchen.
+    </p>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="card" id="chef_card_left">
+  <img src="tom.jpg" alt="tom" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Tom Colicchio - American Fusion</b></h4><center>
+    <p class="card_text">One of the most exciting young chefs from the United States, in coming to Le Brume Salée, Tom brings an incredibly creative culinary pallet from his New York restaurants. The modern American cuisine from his New York restaurants is known for its creativity and unconventionality, all while adhering to an incredibly high qualitative standard.
+      <br><br>
+    </p>
+  </div>
+</div>
+
+<div class="card" id="chef_card_right">
+  <img src="andre.jpg" alt="andre" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Andre Chiang - Taiwanese/Singaporean</b></h4><center>
+    <p class="card_text">Raised in Taiwan and Japan, while also being exposed to French and Singaporean cuisine for most of career, Andre has achieved international acclaim for his unique cooking philosophies. At Le Brume Salée, Andre will bring the incredibly high level of quality from his Singaporean restaurants, while also offering vastly different cuisine to Le Brume Salée’s traditional fare.
+    </p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div id="footer">
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5><i class="material-icons">favorite</i> Le Brume Salée </h5>
+                  <div class="row">
+                      <div class="col-15">
+                          <ul class="list-unstyled">
+                              <li><b>Location: </b>63 Piccadilly, Mayfair, London, W1J, 0AJ, UK</li>
+                              <li><b>Opearting hours: </b>10am-5pm Monday-Saturday;11am-3pm Sunday</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <ul class="nav">
+                    <li class="nav-item"><a href="https://www.facebook.com/Le-Brume-Sal%C3%A9e-389374448243386/?ref=br_rs" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/lebrumesalee/" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                  </ul>
+                  <br>
+              </div>
+              <div class="col-md-2">
+                  <h5 class="text-md-right">Contact Us</h5>
+                  <hr>
+              </div>
+              <div class="col-md-4">
+                <form action="/mesg_main_page" method="POST" id="mesg_form">
+                   <fieldset class="form-group">
+                      <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                         placeholder="Enter email">
+                   </fieldset>
+                   <fieldset class="form-group">
+                      <textarea name="message" class="form-control" id="exampleMessage"
+                         placeholder="Message"></textarea>
+                   </fieldset>
+                   <fieldset class="form-group text-xs-right">
+                      <button type="submit" value="Submit" class="btn btn-secondary-outline btn-
+                         lg" onclick="javascript:alert('Message sent successfully')">Send</button>
+                   </fieldset>
+                </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+</body>
+
+</html>

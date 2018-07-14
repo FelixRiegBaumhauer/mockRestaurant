@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Le Brume Salée - The Best Restaurant in London</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Web_style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+ function changeFunc() {
+  var selectBox = document.getElementById("selectBox");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  if(selectedValue=='0'){
+    window.location.href = "Menu.html";
+  }
+  else if (selectedValue=='1') {
+    window.location.href = "Menu_french.html"
+  }
+ }
+</script>
+</head>
+
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <ul class="navbar-nav">
+      <li id="menu" class="nav-item">
+        <a class="nav-link ml-5" href="Main_page.html">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link ml-2" href="Menu.html">Menu </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-1" href="Experience.html">Experience </a>
+      </li>
+      <a class="navbar-brand ml-3" href="Main_page.html">
+        <img src="logo.png" alt="Logo" style="width:120px;">
+      </a>
+      <li class="nav-item">
+        <a class="nav-link" href="Our_team.html">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Location.html">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Reservation.html">Reservation </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="pic_display">
+  <img src="Menu.jpeg" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <select class="form-control" id="selectBox" onchange="changeFunc();">
+        <option value="0">English</option>
+        <option value="1">French</option>
+      </select>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Starter')" id="defaultOpen">Entrées</button>
+  <button class="tablinks" onclick="openCity(event, 'Fish')" id="defaultOpen">Poissons</button>
+  <button class="tablinks" onclick="openCity(event, 'Classic')">Classiques</button>
+  <button class="tablinks" onclick="openCity(event, 'Dessert')" id="defaultOpen">Desserts</button>
+<button class="tablinks" onclick="openCity(event, 'Wine')" id="defaultOpen">Wine</button>
+</div>
+
+
+<div id="Starter" class="tabcontent">
+  <div class="container">
+  <center><h2>Les Entrées</h2></center>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td>Artichaut et Foie Gras n°12</td>
+        <td>55€ </td>
+      </tr>
+      <tr>
+        <td>Escargots en Pissaladière, Anchois et Herbes Sauvages<br>(kids’ favourite)</td>
+        <td>56€</td>
+      </tr>
+      <tr>
+        <td>Grosses Asperges Vertes, Œuf Mimosa et Caviar</td>
+        <td>39€ </td>
+      </tr>
+      <tr>
+        <td>Araignée de Mer aux Condiments<br>Emulsion au Céleri</td>
+        <td>45€</td>
+      </tr>
+      <tr>
+        <td>Thon de Méditerranée, la Ventrèche en Carpaccio, la Longe Mi-Cuite<br>Fenouil et Caviar</td>
+        <td>64€ </td>
+      </tr>
+      <tr>
+        <td>Grosse Langoustine Poêlée, Mousserons et Asperge Blanche<br>Tartare Acidulé</td>
+        <td>62€ </td>
+      </tr>
+      <tr>
+        <td>Frites De Patates Douce<br>(Végétarien, kids’ favourite)</td>
+        <td>45€ </td>
+      </tr>
+      <tr>
+        <td>Hoummos À La BettRave<br>(Végétarien)</td>
+        <td>50€ </td>
+      </tr>
+      <tr>
+        <td>L'authentique Guacamole<br>(Végétarien)</td>
+        <td>56€ </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div id="Fish" class="tabcontent">
+  <div class="container">
+  <center><h2>Les Poissons</h2></center>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td>Fricassée d’Ormeaux, Poitrine de Cochon Fermier Laquée<br>Kimchi, Jus à l’Estragon</td>
+        <td>53€ </td>
+      </tr>
+      <tr>
+        <td>Pain de Brochet Croustillant aux Ecrevisses<br>Sauce Nantua<br>(kids’ favourite)</td>
+        <td>60€</td>
+      </tr>
+      <tr>
+        <td>Grosse Sole Farcie aux Algues et Coquillages (Pour 2 Personnes)<br>Beurre de Caviar</td>
+        <td>130€ </td>
+      </tr>
+      <tr>
+        <td>Homard Bleu Confit au Beurre Salé<br>Petits Pois et Mélisse, Minestrone à la Gentiane</td>
+        <td>57€</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div id="Classic" class="tabcontent">
+  <div class="container">
+  <center><h2>Les Classiques</h2></center>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td>Tartare de boeuf taillé au couteau, pommes pont-neuf</td>
+        <td>48€ </td>
+      </tr>
+      <tr>
+        <td>Caesar salad</td>
+        <td>50€</td>
+      </tr>
+      <tr>
+        <td>Artichaut et Foie Gras n°12<br>(kids’ favourite)</td>
+        <td>52€</td>
+      </tr>
+      <tr>
+        <td>Pomme de Ris de Veau Rôtie, Croustillant de Riz Soufflé<br>Févettes, Jus à l’Anguille Fumée</td>
+        <td>65€</td>
+      </tr>
+      <tr>
+        <td>Médaillons de lotte à la broche, risotto crémeux aux herbes</td>
+        <td>65€</td>
+      </tr>
+      <tr>
+        <td>Crêpes Sucrées<br>Chocolat blanc, Confiserie fraise, Confiserie citron vert, Nutella<br>(Végétarien, kids’ favourite)</td>
+        <td>15€</td>
+      </tr>
+      <tr>
+        <td>Planche De Charcuteries<br>(Végétarien, sélection de charcuteries fines)  </td>
+        <td>35€</td>
+      </tr>
+      <tr>
+        <td>Planche De Fromages <br>(Végétarien, sélection de fromages affinés)</td>
+        <td>45€</td>
+      </tr>
+      <tr>
+        <td>Bœuf Affiné 90 Jours<br>Beurre de Vin Rouge, Croquette de Moëlle </td>
+        <td>68€</td>
+      </tr>
+      <tr>
+        <td>Pomme de Ris de Veau Rôtie, Croustillant de Riz Soufflé<br>Févettes, Jus à l’Anguille Fumée</td>
+        <td>75€</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div id="Dessert" class="tabcontent">
+  <div class="container">
+  <center><h2>Les Desserts</h2></center>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td>Dessert du jour<br>(kids’ favourite)</td>
+        <td>10€ </td>
+      </tr>
+      <tr>
+        <td>Mouhallabié<br>flan libanais au lait parfumé à la fleur d'oranger</td>
+        <td>13€</td>
+      </tr>
+      <tr>
+        <td>Maamoul (pièce)<br>(kids’ favourite)</td>
+        <td>15€</td>
+      </tr>
+      <td>Salade de fruits frais</td>
+        <td>14€</td>
+      </tr>
+      <tr>
+        <td>Médaillons de lotte à la broche, risotto crémeux aux herbes</td>
+        <td>65€</td>
+      </tr>
+      <tr>
+        <td>Glace maison<br>parfums: crème de lait, rose, chocolat, fraise, citron, vanille==3boules aux choix</td>
+        <td>12€</td>
+      </tr>
+      <tr>
+        <td>Dessert Du Jour<br>(Végétarien)</td>
+        <td>10€</td>
+      </tr>
+      <tr>
+        <td>Tiramisu Au Nutella<br>(Végétarien)</td>
+        <td>12€</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<div id="Wine" class="tabcontent">
+  <div class="container">
+  <center><h2>Wine</h2></center>
+  <table class="table table-borderless">
+    <tbody>
+      <tr>
+        <td><h4>White Wine (glasses/6oz)</h4></td>
+      </tr>
+      <tr>
+        <td>Zocker Gruner Veltliner</td>
+        <td>14€</td>
+      </tr>
+      <tr>
+      <td>Crawford River 'Young Vines' Riesling</td>
+        <td>18€</td>
+      </tr>
+      <tr>
+        <td>J.P. Chenet Brut Blancs De Blancs</td>
+        <td>18€</td>
+      </tr>
+      <tr>
+        <td>Oaked Chardonnay</td>
+        <td>21€</td>
+      </tr>
+      <tr>
+        <td>Unoaked Chardonnay</td>
+        <td>21€</td>
+      </tr>
+      <tr><td><br></td></tr>
+      <tr>
+        <td><h4>Red Wine (glasses/6oz)</h4></td>
+      </tr>
+      <tr>
+        <td>Cabernet sauvignon</td>
+        <td>15€</td>
+      </tr>
+      <tr>
+      <td>Norfolk Rise Merlot</td>
+        <td>17€</td>
+      </tr>
+      <tr>
+        <td>Temple Bruer Pinot Noir</td>
+        <td>20€</td>
+      </tr>
+      <tr>
+        <td>Domaine de Brau 'Pure' Cabernet Sauvignon</td>
+        <td>20€</td>
+      </tr>
+      <tr>
+        <td>Châteauneuf-du-Pape Pierre André</td>
+        <td>22€</td>
+      </tr>
+      <tr><td><br></td></tr>
+      <tr>
+        <td><h4>White Wine (bottles/24oz)</h4></td>
+      </tr>
+      <tr>
+        <td>Furmint</td>
+        <td>72€</td>
+      </tr>
+      <tr>
+      <td>Viognier</td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Melon de Bourgogne</td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Kamtal</td>
+        <td>78€</td>
+      </tr>
+      <tr>
+        <td>Leon Beyer</td>
+        <td>79€</td>
+      </tr>
+      <tr>
+        <td>Großes Gewächs</td>
+        <td>80€</td>
+      </tr>
+      <tr>
+        <td>Savennières </td>
+        <td>86€</td>
+      </tr>
+      <tr>
+        <td>Napa Valley</td>
+        <td>89€</td>
+      </tr>
+      <tr>
+        <td>Sury-en-Vaux</td>
+        <td>91€</td>
+      </tr>
+      <tr>
+        <td>Chavignol </td>
+        <td>92€</td>
+      </tr>
+      <tr>
+        <td>Kabinett</td>
+        <td>95€</td>
+      </tr>
+      <tr>
+        <td>Spätlese</td>
+        <td>98€</td>
+      </tr>
+      <tr>
+        <td>Auslese</td>
+        <td>102€</td>
+      </tr>
+      <tr>
+        <td>Spätlese-Trocken</td>
+        <td>104€</td>
+      </tr>
+      <tr>
+        <td>Riesling</td>
+        <td>109€</td>
+      </tr>
+      <tr>
+        <td>Skeveldra</td>
+        <td>112€</td>
+      </tr>
+      <tr>
+        <td>Chavignol</td>
+        <td>115€</td>
+      </tr>
+      <tr><td><br></td></tr>
+      <tr>
+        <td><h4>Red Wine (bottles/24oz)</h4></td>
+      </tr>
+      <tr>
+        <td>Clos Roche Blanche</td>
+        <td>70€</td>
+      </tr>
+      <tr>
+      <td>Chevalier Père et Fils</td>
+        <td>72€</td>
+      </tr>
+      <tr>
+        <td>Melon de Bourgogne</td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Agiorgirtiko</td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Xinomavro</td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Kallmët </td>
+        <td>75€</td>
+      </tr>
+      <tr>
+        <td>Barbera del Monferrato</td>
+        <td>80€</td>
+      </tr>
+      <tr>
+        <td>Nebbiolo</td>
+        <td>81€</td>
+      </tr>
+      <tr>
+        <td>Comte de Vogüé</td>
+        <td>83€</td>
+      </tr>
+      <tr>
+        <td>René Bouvier </td>
+        <td>85€</td>
+      </tr>
+      <tr>
+        <td>Cabernet Sauvignon & Merlot</td>
+        <td>93€</td>
+      </tr>
+      <tr>
+        <td>Prokupac</td>
+        <td>98€</td>
+      </tr>
+      <tr>
+        <td>Vranec</td>
+        <td>99€</td>
+      </tr>
+      <tr>
+        <td>Blatina</td>
+        <td>103€</td>
+      </tr>
+      <tr>
+        <td>Plavac Mali</td>
+        <td>108€</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<br>
+<p id="disclaimer"><b>Disclaimer: Please consult us for any allergy.</b></p>
+<br>
+<br>
+<br>
+<div id="footer">
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5><i class="material-icons">favorite</i> Le Brume Salée </h5>
+                  <div class="row">
+                      <div class="col-15">
+                          <ul class="list-unstyled">
+                              <li><b>Location: </b>63 Piccadilly, Mayfair, London, W1J, 0AJ, UK</li>
+                              <li><b>Opearting hours: </b>10am-5pm Monday-Saturday;11am-3pm Sunday</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <ul class="nav">
+                    <li class="nav-item"><a href="https://www.facebook.com/Le-Brume-Sal%C3%A9e-389374448243386/?ref=br_rs" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/lebrumesalee/" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                  </ul>
+                  <br>
+              </div>
+              <div class="col-md-2">
+                  <h5 class="text-md-right">Contact Us</h5>
+                  <hr>
+              </div>
+              <div class="col-md-4">
+                <form action="/mesg_main_page" method="POST" id="mesg_form">
+                   <fieldset class="form-group">
+                      <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                         placeholder="Enter email">
+                   </fieldset>
+                   <fieldset class="form-group">
+                      <textarea name="message" class="form-control" id="exampleMessage"
+                         placeholder="Message"></textarea>
+                   </fieldset>
+                   <fieldset class="form-group text-xs-right">
+                      <button type="submit" value="Submit" class="btn btn-secondary-outline btn-
+                         lg" onclick="javascript:alert('Message sent successfully')">Send</button>
+                   </fieldset>
+                </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+</html>

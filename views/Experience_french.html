@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Le Brume Salée - Le meilleur restaurant de Londres</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="Web_style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+ function changeFunc() {
+  var selectBox = document.getElementById("selectBox");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+  if(selectedValue=='0'){
+    window.location.href = "Experience.html";
+  }
+  else if (selectedValue=='1') {
+    window.location.href = "Experience_french.html"
+  }
+ }
+</script>
+</head>
+
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <ul class="navbar-nav">
+      <li id="menu" class="nav-item">
+        <a class="nav-link ml-5" href="Main_page_french.html">Maison </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ml-2" href="Menu_french.html">Menu</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link ml-1" href="Experience_french.html">Expérience</a>
+      </li>
+      <a class="navbar-brand ml-3" href="Main_page.html">
+        <img src="logo.png" alt="Logo" style="width:120px;">
+      </a>
+      <li class="nav-item">
+        <a class="nav-link" href="Our_team_french.html">Notre équipe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Location_french.html">Emplacement</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Reservation_french.html">Réservation</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="pic_display">
+  <img src="experience.jpg" class="img-fluid" alt="Responsive image">
+</div>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <select class="form-control" id="selectBox" onchange="changeFunc();">
+        <option value="1">French</option>
+        <option value="0">English</option>
+      </select>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+
+<center>Dans Le Brume Salée,</center>
+<center>Les clients sont exposés à la plus belle dans leur expérience culinaire,</center>
+<center>mais aussi dans les événements qui ont précédé et suivi leur repas.</center>
+<br>
+<br>
+
+<div class="card" id="exp_card_left">
+  <img src="exp_1.jpg" alt="exp1" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Aller et venir</b></h4><center>
+    <p class="card_text">En plus du service de voiturier gratuit offert à tous les clients,
+      les convives ont la possibilité d'être accompagnés au départ et à destination du Brume Salée.
+      Ces chauffeurs sont plus qu'heureux de prendre nos clients à n'importe quel endroit dans le centre de Londres.</p>
+  </div>
+</div>
+
+<div class="card" id="exp_card_right">
+  <img src="exp_2.jpg" alt="exp2" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Pour les jeunes</b></h4><center>
+    <p class="card_text">Au restaurant Le Brume Salée, les clients trouveront une salle de jeux entièrement équipée pour les plus jeunes.<br><br><br></p>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="card" id="exp_card_left">
+  <img src="exp_4.jpg" alt="exp3" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>La cave à vin</b></h4><center>
+    <p class="card_text">Sur demande, vous pourrez faire une visite guidée gratuite de l'impressionnante cave à vin de 50 000 bouteilles du restaurant, ainsi qu'une expérience de dégustation de vin immersive.</p>
+  </div>
+</div>
+
+<div class="card" id="exp_card_right">
+  <img src="exp_3.jpg" alt="exp4" style="width:100%">
+  <div class="container">
+    <br><center><h4><b>Restaurant Divertissement</b></h4><center>
+    <p class="card_text">Avec le spectacle en direct de la bande résidente du restaurant et des artistes invités spéciaux, les clients peuvent profiter des spectacles et de la musique en direct pendant qu'ils dînent.</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div id="footer">
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5><i class="material-icons">favorite</i> Le Brume Salée </h5>
+                  <div class="row">
+                      <div class="col-15">
+                          <ul class="list-unstyled">
+                              <li><b>Emplacement: </b>63 Piccadilly, Mayfair, London, W1J, 0AJ, UK</li>
+                              <li><b>Heures d'ouverture: </b>10am-5pm Monday-Saturday;11am-3pm Sunday</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <ul class="nav">
+                    <li class="nav-item"><a href="https://www.facebook.com/Le-Brume-Sal%C3%A9e-389374448243386/?ref=br_rs" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/lebrumesalee/" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+                  </ul>
+                  <br>
+              </div>
+              <div class="col-md-2">
+                  <h5 class="text-md-right">Contactez nous</h5>
+                  <hr>
+              </div>
+              <div class="col-md-4">
+                <form action="/mesg_main_page" method="POST" id="mesg_form">
+                   <fieldset class="form-group">
+                      <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                         placeholder="Enter email">
+                   </fieldset>
+                   <fieldset class="form-group">
+                      <textarea name="message" class="form-control" id="exampleMessage"
+                         placeholder="Message"></textarea>
+                   </fieldset>
+                   <fieldset class="form-group text-xs-right">
+                      <button type="submit" value="Submit" class="btn btn-secondary-outline btn-
+                         lg" onclick="javascript:alert('Message sent successfully')">Send</button>
+                   </fieldset>
+                </form>
+              </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+</body>
+
+</html>
